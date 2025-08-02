@@ -277,6 +277,12 @@ RCT_EXPORT_METHOD(saveWalkingRunningDistance:(NSDictionary *)input callback:(RCT
     [self fitness_saveWalkingRunningDistance:input callback:callback];
 }
 
+RCT_EXPORT_METHOD(savePushCountSample:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
+{
+    [self _initializeHealthStore];
+    [self fitness_savePushCountSample:input callback:callback];
+}
+
 RCT_EXPORT_METHOD(getDistanceWalkingRunning:(NSDictionary *)input callback:(RCTResponseSenderBlock)callback)
 {
     [self _initializeHealthStore];

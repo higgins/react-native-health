@@ -88,6 +88,7 @@ export const Permissions = {
   SleepAnalysis: 'SleepAnalysis',
   StepCount: 'StepCount',
   Steps: 'Steps',
+  PushCount: 'PushCount',
   Vo2Max: 'Vo2Max',
   WaistCircumference: 'WaistCircumference',
   WalkingHeartRateAverage: 'WalkingHeartRateAverage',

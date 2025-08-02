@@ -170,6 +170,11 @@ declare module 'react-native-health' {
       callback: (error: string, result: HealthValue) => void,
     ): void
 
+    savePushCountSample(
+      options: HealthValueOptions,
+      callback: (error: string, result: HealthValue) => void,
+    ): void
+
     getDistanceWalkingRunning(
       options: HealthInputOptions,
       callback: (err: string, results: HealthValue) => void,
@@ -801,6 +806,7 @@ declare module 'react-native-health' {
     SleepAnalysis = 'SleepAnalysis',
     StepCount = 'StepCount',
     Steps = 'Steps',
+    PushCount = 'PushCount',
     Vo2Max = 'Vo2Max',
     WaistCircumference = 'WaistCircumference',
     WalkingHeartRateAverage = 'WalkingHeartRateAverage',
