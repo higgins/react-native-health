@@ -100,12 +100,20 @@ AppleHealthKit.initHealthKit(permissions, (error: string) => {
     startDate: new Date(2020, 1, 1).toISOString(),
   }
 
-  AppleHealthKit.getHeartRateSamples(
+AppleHealthKit.getHeartRateSamples(
     options,
     (callbackError: string, results: HealthValue[]) => {
       /* Samples are now collected from HealthKit */
     },
   )
+})
+```
+
+```ts
+AppleHealthKit.savePushCountSample({
+  value: 30,
+  startDate: new Date().toISOString(),
+  endDate: new Date().toISOString(),
 })
 ```
 

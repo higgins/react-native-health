@@ -34,6 +34,7 @@ export const HealthKit = {
   getDailyStepCountSamples: AppleHealthKit.getDailyStepCountSamples,
   saveSteps: AppleHealthKit.saveSteps,
   saveWalkingRunningDistance: AppleHealthKit.saveWalkingRunningDistance,
+  savePushCountSample: AppleHealthKit.savePushCountSample,
   getDistanceWalkingRunning: AppleHealthKit.getDistanceWalkingRunning,
   getDailyDistanceWalkingRunningSamples: AppleHealthKit.getDailyDistanceWalkingRunningSamples,
   getDistanceCycling: AppleHealthKit.getDistanceCycling,
